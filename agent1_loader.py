@@ -12,6 +12,10 @@ import re
 INPUT_FILE  = "data/transcriptions_200.json"
 OUTPUT_FILE = "data/transcriptions_clean.csv"
 
+# Bruit UI TikTok à supprimer
+UI_NOISE = ["tiktok", "following", "followers", "likes", "share", "comment",
+            "duet", "stitch", "fyp", "foryou", "foryoupage", "viral"]
+
 # ─── STEP 1 : Charger le JSON ─────────────────────────────
 def load_data(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -24,15 +28,40 @@ def load_data(path):
 def clean_text(text):
     if not isinstance(text, str):
         return ""
+
+    # Supprimer caractères spéciaux
     text = re.sub(r'[|@#]', ' ', text)
+
+    # Supprimer lettres répétées (Woooow → Wow)
+    text = re.sub(r'(.)\1{3,}', r'\1\1', text)
+
+    # Supprimer mots répétés 3+ fois (mot mot mot → mot)
+    text = re.sub(r'\b(\w+)\b(?:\s+\1\b){2,}', r'\1', text, flags=re.IGNORECASE)
+
+    # Supprimer nombres seuls courts
     text = re.sub(r'\b\d{1,2}\b', '', text)
+
+    # Supprimer bruit UI TikTok
+    words = text.split()
+    words = [w for w in words if w.lower() not in UI_NOISE]
+    text = ' '.join(words)
+
+    # Nettoyer espaces
     text = re.sub(r'\s+', ' ', text).strip()
+
     return text
 
 # ─── STEP 3 : Fusionner audio + visual ────────────────────
 def build_final_text(row):
     audio  = clean_text(row['audio_text'])
     visual = clean_text(row['visual_text'])
+
+    # Ignorer si trop court — pas de contenu utile
+    if len(audio) < 10:
+        audio = ""
+    if len(visual) < 10:
+        visual = ""
+
     if audio and visual:
         return f"{audio} {visual}"
     elif audio:
@@ -54,7 +83,7 @@ def run_agent1():
 
     before = len(df)
     df = df[df['text_clean'].str.strip() != ""].reset_index(drop=True)
-    print(f"🗑️  Supprimé : {before - len(df)} lignes vides")
+    print(f"🗑️  Supprimé : {before - len(df)} lignes vides ou bruit")
 
     df_clean = df[['video', 'category', 'label', 'text_clean']].copy()
 

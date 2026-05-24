@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "total_videos": 5,
+    "flagged": 4,
+    "safe": 1,
+    "errors": 0,
+    "correct_predictions": 4,
+    "accuracy": "80.0%"
+  },
+  "results": [
+    {
+      "video": "alvinmarinas_7024295781209361690.mp4",
+      "category_real": "Harmful Content",
+      "predicted_label": "FLAGGED",
+      "priority": "N/A",
+      "score": 0,
+      "reason": "N/A",
+      "correct": true
+    },
+    {
+      "video": "gopro_7245353514334178606.mp4",
+      "category_real": "Harmful Content",
+      "predicted_label": "SAFE",
+      "priority": "MODERE",
+      "score": 0,
+      "reason": "Parent preferred settings were engaged and prioritized child safety even though content was deemed SAFE.\\n",
+      "correct": false
+    },
+    {
+      "video": "togethxr_7009010057060896006.mp4",
+      "category_real": "Harmful Content",
+      "predicted_label": "FLAGGED",
+      "priority": "CRITIQUE",
+      "score": 100,
+      "reason": "The content is verified as DANGEROUS.",
+      "correct": true
+    },
+    {
+      "video": "nikki.hooper_7102137033312832773.mp4",
+      "category_real": "Harmful Content",
+      "predicted_label": "FLAGGED",
+      "priority": "CRITIQUE",
+      "score": 80,
+      "reason": "Assumed dangerous content with MODERATE priority",
+      "correct": true
+    },
+    {
+      "video": "spladlecity_7246558417991666990.mp4",
+      "category_real": "Harmful Content",
+      "predicted_label": "FLAGGED",
+      "priority": "CRITIQUE",
+      "score": 100,
+      "reason": "We blocked this content because it was deemed DANGEROUS by our team.",
+      "correct": true
+    }
+  ]
+}

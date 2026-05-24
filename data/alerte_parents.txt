@@ -1,0 +1,253 @@
+=======================================================
+  SAFETOK — RAPPORT PARENTS
+  Date : 2026-05-23 20:46
+=======================================================
+
+  Contenus bloqués aujourd'hui : 40
+  🔴 Critiques : 20
+  🟠 Élevés    : 20
+  🟡 Modérés   : 0
+
+───────────────────────────────────────────────────────
+  DÉTAIL DES BLOCAGES
+───────────────────────────────────────────────────────
+
+  Vidéo    : zeroxvent_7198802354131635502.mp4
+  Score    : 100/100
+  Catégorie: Harmful
+  Raison   : Explicit suicidal ideation and graphic violence.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : thuantrendy_7085704540627930394.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threats of physical harm and emotional distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : alex.artfire_6797429873221668101.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Reference to fire spreading in room, difficulty breathing.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : colin.louk.zero_7371202066649320734.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Physical violence and aggression training.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : user4638751123694_6988506099829853442.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Promotes superficiality and body shaming.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : sofiagarzah_7230631749561175301.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threats of self-harm and emotional distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : d3rksunsh1ne_7278350283086810373.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses feelings of hopelessness and despair.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : 012.08.031_7055498172436696366.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses feelings of loneliness and isolation.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : falann__7048294595930656001.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Reference to death and emotional distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : vungtau.72_7098219452864400667.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expressions of impending death and distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : mattpianoman_7243778877477162245.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threat of self-harm and death.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : lil.peep.page_6948623828541017350.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Self-harm and eating disorder references.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : sincerelyletters_7222707608799497514.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses feelings of depression and low motivation.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : ferchismejia_7172699039991876869.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expressions of hopelessness and loss of control.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : imfine4567_7130203739553647873.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses distress and feeling overwhelmed.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : justwhitney_7291495941289348382.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threat of self-harm and emotional distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : chaukhadi2107_7179543521160924443.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Reference to self-harm and violence.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : whhatever__7339705749704051974.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expressions of self-hatred and suicidal thoughts.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : swanlover123_7346620521045413152.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threat of physical harm and emotional distress.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : anhme099_7215475932763622683.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threat of violence and trespassing.
+  Priorité : 🔴 CRITIQUE
+
+  Vidéo    : jherald.artz_7220004107141074182.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Expressions of anxiety and emotional distress.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : belva.faristha_7134242533592550682.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Mentions of feeling embarrassed and anxious.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : alwuhu_6897775621133356293.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to potentially spicy food challenge.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : annarousee_7128142170862767406.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Depressive language and insult towards personality.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : vent_.as_7206788519887375622.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Threats of physical and emotional harm.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : .gu1ltyy_7349197829971250438.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Threat of property damage and potential violence.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : keyrinne_7271944619204627717.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Insecure language and bullying comments.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : onlyfortherock_7167180476325661957.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Expressions of sadness and regret.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : .16.6.21_7056395159113633025.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to relapse and sadness.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : capnyx_7235714607355120903.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to smoking and potential health issues.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : hamuvevoi_7261949013962837255.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Self-harm and suicidal ideation mentioned.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : yourfavbatty_7297953195609967904.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Mentions feeling lonely and empty.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : anden75_7360290534541233424.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to eating spicy food, potential choking hazard.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : slinahuynh_7353642737868000529.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Encourages reckless behavior and self-doubt.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : bombom_vlog_7369567963478805768.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to animal cruelty and danger.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : echtajfo6yd_7232170066530422021.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to self-harm with belt.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : mattpianoman_7258280125471509766.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Self-harm language and emotional distress.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : loanhquanhmotminh_7238497752013901058.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Threats of self-harm and cutting.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : dongam_den.vauvn_7232565070809648390.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Depressive language and emotional distress.
+  Priorité : 🟠 ELEVÉ
+
+  Vidéo    : quyensachnho_7370309303414164744.mp4
+  Score    : 60/100
+  Catégorie: Harmful
+  Raison   : Reference to self-harm and reckless behavior.
+  Priorité : 🟠 ELEVÉ

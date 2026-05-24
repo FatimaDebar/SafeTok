@@ -8,9 +8,8 @@ import pandas as pd
 import os
 import time
 from groq import Groq
-from dotenv import load_dotenv
 
-load_dotenv()
+
 INPUT_FILE  = "data/transcriptions_clean.csv"
 OUTPUT_FILE = "data/transcriptions_scored.csv"
 

@@ -1,0 +1,87 @@
+=======================================================
+  SAFETOK — RAPPORT D'ALERTES
+  Généré le : 2026-05-23 20:45
+=======================================================
+
+  Total analysé  : 187
+  🔴 DANGEREUX   : 40
+  🟢 SAFE        : 147
+
+=======================================================
+  TOP 10 CONTENUS LES PLUS DANGEREUX
+=======================================================
+
+  [🔴 CRITIQUE]
+  Vidéo    : zeroxvent_7198802354131635502.mp4
+  Score    : 100/100
+  Catégorie: Harmful
+  Raison   : Explicit suicidal ideation and graphic violence.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : thuantrendy_7085704540627930394.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threats of physical harm and emotional distress.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : alex.artfire_6797429873221668101.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Reference to fire spreading in room, difficulty breathing.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : colin.louk.zero_7371202066649320734.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Physical violence and aggression training.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : user4638751123694_6988506099829853442.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Promotes superficiality and body shaming.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : sofiagarzah_7230631749561175301.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Threats of self-harm and emotional distress.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : d3rksunsh1ne_7278350283086810373.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses feelings of hopelessness and despair.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : 012.08.031_7055498172436696366.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expresses feelings of loneliness and isolation.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : falann__7048294595930656001.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Reference to death and emotional distress.
+  Label réel: DANGEROUS
+
+  [🔴 CRITIQUE]
+  Vidéo    : vungtau.72_7098219452864400667.mp4
+  Score    : 80/100
+  Catégorie: Harmful
+  Raison   : Expressions of impending death and distress.
+  Label réel: SAFE
+
+=======================================================
+  STATS PAR CATÉGORIE
+=======================================================
+  Harmful : 40 vidéos
