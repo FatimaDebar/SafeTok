@@ -1,5 +1,13 @@
-pandas
+openai-whisper
+easyocr
+opencv-python
 groq
-python-dotenv
+crewai
+crewai-tools
+litellm
+cerebras-cloud-sdk
 streamlit
-colorama
+plotly
+pandas
+python-dotenv
+langchain-groq

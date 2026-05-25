@@ -21,7 +21,7 @@ def load_data(path):
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     df = pd.DataFrame(data)
-    print(f"✅ Chargé : {len(df)} entrées")
+    print(f" Chargé : {len(df)} entrées")
     return df
 
 # ─── STEP 2 : Nettoyer le texte ───────────────────────────
@@ -83,18 +83,18 @@ def run_agent1():
 
     before = len(df)
     df = df[df['text_clean'].str.strip() != ""].reset_index(drop=True)
-    print(f"🗑️  Supprimé : {before - len(df)} lignes vides ou bruit")
+    print(f"  Supprimé : {before - len(df)} lignes vides ou bruit")
 
     df_clean = df[['video', 'category', 'label', 'text_clean']].copy()
 
-    print(f"\n📊 Distribution des labels :")
+    print(f"\nDistribution des labels :")
     print(df_clean['label'].value_counts().to_string())
-    print(f"\n📊 Distribution des catégories :")
+    print(f"\n Distribution des catégories :")
     print(df_clean['category'].value_counts().to_string())
-    print(f"\n✅ Total propre : {len(df_clean)} entrées")
+    print(f"\n Total propre : {len(df_clean)} entrées")
 
     df_clean.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
-    print(f"\n💾 Sauvegardé → {OUTPUT_FILE}")
+    print(f"\n Sauvegardé → {OUTPUT_FILE}")
     print("=" * 50)
 
     return df_clean
@@ -102,5 +102,5 @@ def run_agent1():
 # ─── RUN ──────────────────────────────────────────────────
 if __name__ == "__main__":
     df = run_agent1()
-    print("\n🔍 Aperçu (5 premières lignes) :")
+    print("\n Aperçu (5 premières lignes) :")
     print(df[['label', 'category', 'text_clean']].head().to_string())

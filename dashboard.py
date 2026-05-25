@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 # ─── CONFIG ───────────────────────────────────────────────
 st.set_page_config(
-    page_title="SafeTok Dashboard",
+    page_title="TikSafe Dashboard",
     page_icon="🛡️",
     layout="wide"
 )
@@ -41,7 +41,7 @@ def load_data():
 scored, rapport = load_data()
 
 # ─── HEADER ───────────────────────────────────────────────
-st.title("🛡️ SafeTok — Dashboard de Modération")
+st.title(" TikSafe - Dashboard de Modération")
 st.markdown("**Système de détection automatique de contenus dangereux sur TikTok**")
 st.divider()
 
@@ -54,13 +54,13 @@ safe      = len(scored[scored['ai_decision'] == 'SAFE'])
 accuracy  = round((scored['ai_decision'] == scored['label']).sum() / total * 100, 1)
 
 with col1:
-    st.metric("📹 Total Analysé", total)
+    st.metric(" Total Analysé", total)
 with col2:
-    st.metric("🔴 Contenus Dangereux", dangerous)
+    st.metric(" Contenus Dangereux", dangerous)
 with col3:
-    st.metric("🟢 Contenus Safe", safe)
+    st.metric(" Contenus Safe", safe)
 with col4:
-    st.metric("🎯 Accuracy", f"{accuracy}%")
+    st.metric("Accuracy", f"{accuracy}%")
 
 st.divider()
 
@@ -68,7 +68,7 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("📊 Distribution des décisions")
+    st.subheader(" Distribution des décisions")
     fig1 = px.pie(
         values=[dangerous, safe],
         names=['DANGEROUS', 'SAFE'],
@@ -83,7 +83,7 @@ with col1:
     st.plotly_chart(fig1, use_container_width=True)
 
 with col2:
-    st.subheader("📊 Distribution par catégorie")
+    st.subheader(" Distribution par catégorie")
     cat_counts = scored['ai_category'].value_counts().reset_index()
     cat_counts.columns = ['Catégorie', 'Count']
     fig2 = px.bar(
@@ -108,7 +108,7 @@ with col2:
 st.divider()
 
 # ─── DISTRIBUTION DES SCORES ──────────────────────────────
-st.subheader("📈 Distribution des scores de dangerosité")
+st.subheader("Distribution des scores de dangerosité")
 fig3 = px.histogram(
     scored, x='ai_score',
     color='ai_decision',
@@ -126,24 +126,24 @@ st.plotly_chart(fig3, use_container_width=True)
 st.divider()
 
 # ─── TOP CONTENUS DANGEREUX ───────────────────────────────
-st.subheader("🚨 Top contenus dangereux détectés")
+st.subheader("Top contenus dangereux détectés")
 
 for _, row in rapport.head(10).iterrows():
     with st.expander(f"{row['priority']} | Score: {row['ai_score']}/100 | {row['video'][:50]}"):
         col1, col2 = st.columns(2)
         with col1:
-            st.write(f"**📹 Vidéo :** {row['video']}")
-            st.write(f"**🏷️ Catégorie :** {row['ai_category']}")
-            st.write(f"**📊 Score :** {row['ai_score']}/100")
+            st.write(f"** Vidéo :** {row['video']}")
+            st.write(f"** Catégorie :** {row['ai_category']}")
+            st.write(f"** Score :** {row['ai_score']}/100")
         with col2:
-            st.write(f"**💬 Raison :** {row['ai_reason']}")
-            st.write(f"**✅ Label réel :** {row['label']}")
-            st.write(f"**⚡ Priorité :** {row['priority']}")
+            st.write(f"** Raison :** {row['ai_reason']}")
+            st.write(f"** Label réel :** {row['label']}")
+            st.write(f"** Priorité :** {row['priority']}")
 
 st.divider()
 
 # ─── CONFUSION MATRIX ─────────────────────────────────────
-st.subheader("🎯 Matrice de confusion")
+st.subheader(" Matrice de confusion")
 
 tp = len(scored[(scored['ai_decision']=='DANGEROUS') & (scored['label']=='DANGEROUS')])
 tn = len(scored[(scored['ai_decision']=='SAFE')      & (scored['label']=='SAFE')])

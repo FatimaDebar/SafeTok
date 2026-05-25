@@ -47,7 +47,7 @@ def analyse_text(text):
         result = response.choices[0].message.content.strip()
         return parse_result(result)
     except Exception as e:
-        print(f"  ⚠️ Erreur : {e}")
+        print(f" Erreur : {e}")
         return {"score": 0, "ai_category": "Error", "ai_decision": "SAFE", "reason": str(e)}
 
 def parse_result(text):
@@ -73,7 +73,7 @@ def run_agent2():
     print("=" * 50)
 
     df = pd.read_csv(INPUT_FILE)
-    print(f"✅ Chargé : {len(df)} entrées\n")
+    print(f"Chargé : {len(df)} entrées\n")
 
     scores, categories, decisions, reasons = [], [], [], []
 
@@ -94,12 +94,12 @@ def run_agent2():
 
     correct  = (df['ai_decision'] == df['label']).sum()
     accuracy = round(correct / len(df) * 100, 2)
-    print(f"\n🎯 Accuracy : {accuracy}% ({correct}/{len(df)})")
-    print(f"\n📊 Confusion rapide :")
+    print(f"\n Accuracy : {accuracy}% ({correct}/{len(df)})")
+    print(f"\n Confusion rapide :")
     print(df.groupby(['label', 'ai_decision']).size().to_string())
 
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")
-    print(f"\n💾 Sauvegardé → {OUTPUT_FILE}")
+    print(f"\n Sauvegardé → {OUTPUT_FILE}")
     print("=" * 50)
     return df
 

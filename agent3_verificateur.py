@@ -17,23 +17,23 @@ def run_agent3():
     print("=" * 50)
 
     df = pd.read_csv(INPUT_FILE)
-    print(f"✅ Chargé : {len(df)} entrées\n")
+    print(f" Chargé : {len(df)} entrées\n")
 
     # ── Séparer DANGEROUS et SAFE ─────────────────────────
     dangerous = df[df['ai_decision'] == "DANGEROUS"].copy()
     safe      = df[df['ai_decision'] == "SAFE"].copy()
 
-    print(f"🔴 Contenus DANGEREUX : {len(dangerous)}")
-    print(f"🟢 Contenus SAFE      : {len(safe)}\n")
+    print(f" Contenus DANGEREUX : {len(dangerous)}")
+    print(f" Contenus SAFE      : {len(safe)}\n")
 
     # ── Niveaux de priorité selon score ───────────────────
     def get_priority(score):
         if score >= 80:
-            return "🔴 CRITIQUE"
+            return "CRITIQUE"
         elif score >= 50:
-            return "🟠 ELEVÉ"
+            return "ELEVÉ"
         else:
-            return "🟡 MODÉRÉ"
+            return "MODÉRÉ"
 
     dangerous['priority'] = dangerous['ai_score'].apply(get_priority)
 
@@ -44,7 +44,7 @@ def run_agent3():
     df_rapport = dangerous[['video', 'ai_score', 'priority',
                              'ai_category', 'ai_reason', 'label']].copy()
     df_rapport.to_csv(RAPPORT_FILE, index=False, encoding="utf-8")
-    print(f"💾 Rapport sauvegardé → {RAPPORT_FILE}")
+    print(f" Rapport sauvegardé → {RAPPORT_FILE}")
 
     # ── Générer fichier alertes ────────────────────────────
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -54,8 +54,8 @@ def run_agent3():
     lines.append(f"  Généré le : {now}")
     lines.append(f"{'='*55}\n")
     lines.append(f"  Total analysé  : {len(df)}")
-    lines.append(f"  🔴 DANGEREUX   : {len(dangerous)}")
-    lines.append(f"  🟢 SAFE        : {len(safe)}")
+    lines.append(f"   DANGEREUX   : {len(dangerous)}")
+    lines.append(f"   SAFE        : {len(safe)}")
     lines.append(f"\n{'='*55}")
     lines.append(f"  TOP 10 CONTENUS LES PLUS DANGEREUX")
     lines.append(f"{'='*55}\n")
@@ -78,19 +78,19 @@ def run_agent3():
 
     with open(ALERTE_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
-    print(f"💾 Alertes sauvegardées → {ALERTE_FILE}\n")
+    print(f"Alertes sauvegardées → {ALERTE_FILE}\n")
 
     # ── Affichage terminal ─────────────────────────────────
-    print("🔍 TOP 5 CONTENUS DANGEREUX :")
+    print(" TOP 5 CONTENUS DANGEREUX :")
     print("-" * 50)
     for _, row in dangerous.head(5).iterrows():
         print(f"  {row['priority']} | Score:{row['ai_score']} | {row['ai_category']}")
-        print(f"  📹 {row['video'][:50]}")
-        print(f"  💬 {row['ai_reason']}")
+        print(f"   {row['video'][:50]}")
+        print(f"   {row['ai_reason']}")
         print()
 
     print("=" * 50)
-    print("✅ Agent 3 terminé !")
+    print(" Agent 3 terminé !")
     return dangerous
 
 if __name__ == "__main__":
